@@ -1,0 +1,21 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      java: openjdk11
+    commands:
+      - cd /home/ec2-user
+      - git clone https://github.com/your-github-repo.git
+      - cd your-github-repo
+      - mvn package
+  pre_build:
+    commands:
+      - sudo service tomcat8 stop
+      - sudo rm -rf /var/lib/tomcat8/webapps/*
+  build:
+    commands:
+      - sudo cp /home/ec2-user/your-github-repo/target/your-maven-project.war /var/lib/tomcat8/webapps/
+  post_build:
+    commands:
+      - sudo service tomcat8 start
