@@ -6,16 +6,20 @@ phases:
       java: openjdk11
     commands:
       - cd /home/ec2-user
-      - git clone https://github.com/your-github-repo.git
-      - cd your-github-repo
+      - rm -rf Java-Wep-app-Pipeline
+      - git clone https://github.com/SamynathanS6720/Java-Wep-app-Pipeline
+      - cd Java-Wep-app-Pipeline
       - mvn package
   pre_build:
     commands:
-      - sudo service tomcat8 stop
+      - cd /opt/apache-tomcat-9.0.73/bin
+      - ./shutdown.sh 
+      - sudo service tomcat stop
       - sudo rm -rf /var/lib/tomcat8/webapps/*
   build:
     commands:
-      - sudo cp /home/ec2-user/your-github-repo/target/your-maven-project.war /var/lib/tomcat8/webapps/
+      - sudo cp /home/ec2-user/Java-Wep-app-Pipeline/target/helloworld.war /opt/apache-tomcat-9.0.73/webapps/
   post_build:
     commands:
-      - sudo service tomcat8 start
+      - cd /opt/apache-tomcat-9.0.73/bin
+      - ./startup.sh 
