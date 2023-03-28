@@ -3,8 +3,8 @@ os: linux
 files:
 - source: target/helloworld.war
   destination: /home/ec2-user/javaapp
-- source: /scripts/requirements.txt
-  destination: /home/ec2-user/scripts
+# - source: /scripts/requirements.txt
+#   destination: /home/ec2-user/scripts
 # hooks:
 #   AfterInstall:
 #   - location: scripts/install_java
