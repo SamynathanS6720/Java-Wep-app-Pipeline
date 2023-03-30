@@ -101,7 +101,7 @@ button {
         <div class="container1">
           <h2>Staff Login</h2>    
             <label>Username  </label>   
-            <input type="text" placeholder="Enter Username" name="username" required>  
+            <input type="text" placeholder="Samynathan" name="username" required>  
             <label>Password  </label>   
             <input type="password" placeholder="Enter Password" name="password" required>  
             <button type="submit" >Login</button>   
