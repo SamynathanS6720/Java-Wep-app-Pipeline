@@ -17,7 +17,7 @@ sudo rm -r /usr/share/tomcat/webapps/helloworld.war
 # mvn clean package
 
 # Copy the WAR file to Tomcat webapps directory
-sudo cp target/helloworld.war /usr/share/tomcat/webapps/
+sudo cp webapps/helloworld.war /usr/share/tomcat/webapps/
 
 # Restart Tomcat server to deploy the project
 sudo service tomcat restart

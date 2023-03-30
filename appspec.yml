@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-- source: target/helloworld.war
+- source: /
   destination: /home/ec2-user/webapp
 # - source: /scripts/requirements.txt
 #   destination: /home/ec2-user/scripts
