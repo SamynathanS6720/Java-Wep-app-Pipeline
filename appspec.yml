@@ -7,7 +7,7 @@ files:
 #   destination: /home/ec2-user/scripts
 hooks:
   AfterInstall:
-  - location: scripts/install_java
+  - location: scripts/deployment
     timeout: 300
     runas: root
 #   - location: scripts/install_tomcat
