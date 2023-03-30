@@ -1,5 +1,3 @@
-#!/bin/bash
-
 # Install dos2unix
 sudo yum install -y dos2unix
 
