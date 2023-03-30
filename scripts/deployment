@@ -11,7 +11,7 @@ cd Java-Wep-app-Pipeline/
 mvn clean package
 
 # Copy the WAR file to Tomcat webapps directory
-sudo cp target/project.war /usr/share/tomcat/webapps/
+sudo cp target/helloworld.war /usr/share/tomcat/webapps/
 
 # Restart Tomcat server to deploy the project
 sudo service tomcat restart
