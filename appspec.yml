@@ -5,11 +5,11 @@ files:
   destination: /home/ec2-user/webapp
 # - source: /scripts/requirements.txt
 #   destination: /home/ec2-user/scripts
-# hooks:
-  # AfterInstall:
-  # - location: scripts/install_java
-  #   timeout: 300
-  #   runas: root
+hooks:
+  AfterInstall:
+  - location: scripts/install_java
+    timeout: 300
+    runas: root
   # - location: scripts/install_tomcat
   #   timeout: 300
   #   runas: root
