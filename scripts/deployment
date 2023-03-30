@@ -1,6 +1,12 @@
 # Restart Tomcat server
 sudo service tomcat restart
 
+rm -rf Java-Wep-app-Pipeline
+
+sudo rm -rf /usr/share/tomcat/webapps/helloworld
+
+sudo rm -r /usr/share/tomcat/webapps/helloworld.war
+
 # Clone the Maven project from Git repository
 git clone https://github.com/SamynathanS6720/Java-Wep-app-Pipeline
 
