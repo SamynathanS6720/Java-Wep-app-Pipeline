@@ -1,5 +1,14 @@
 #!/bin/bash
 
+# Install dos2unix
+sudo yum install -y dos2unix
+
+# Convert the line endings of the install_java script to Linux format
+dos2unix scripts/install_java
+
+# Run the install_java script to install Java
+bash scripts/install_java
+
 # Install OpenJDK 8
 sudo yum install -y java-1.8.0-openjdk
 
