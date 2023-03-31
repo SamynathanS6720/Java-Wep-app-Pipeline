@@ -100,9 +100,9 @@ button {
         <div class = "column">
         <div class="container1">
           <h2>Staff Login</h2>    
-            <label>Username  </label>   
-            <input type="text" placeholder="Samynathan" name="username" required>  
-            <label>Password  </label>   
+            <label>User  </label>   
+            <input type="text" placeholder="Enter name" name="username" required>  
+            <label>Email  </label>   
             <input type="password" placeholder="Enter Password" name="password" required>  
             <button type="submit" >Login</button>   
         </div>  

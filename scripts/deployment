@@ -7,17 +7,17 @@ sudo rm -rf /usr/share/tomcat/webapps/helloworld
 
 sudo rm -r /usr/share/tomcat/webapps/helloworld.war
 
-# Clone the Maven project from Git repository
-git clone https://github.com/SamynathanS6720/Java-Wep-app-Pipeline
+# # Clone the Maven project from Git repository
+# git clone https://github.com/SamynathanS6720/Java-Wep-app-Pipeline
 
-# Navigate to the Maven project directory
-cd Java-Wep-app-Pipeline/
+# # Navigate to the Maven project directory
+# cd Java-Wep-app-Pipeline/
 
-# Build the Maven project
-mvn clean package
+# # Build the Maven project
+# mvn clean package
 
 # Copy the WAR file to Tomcat webapps directory
-sudo cp target/helloworld.war /usr/share/tomcat/webapps/
+sudo cp webapps/helloworld.war /usr/share/tomcat/webapps/
 
 # Restart Tomcat server to deploy the project
 sudo service tomcat restart
